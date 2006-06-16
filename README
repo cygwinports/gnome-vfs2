@@ -1,0 +1,338 @@
+gnome-vfs2
+-------------------------------------------
+This is the GNOME Virtual File System.
+
+GNOME VFS is currently used as one of the foundations 
+of the Nautilus file manager.
+
+Runtime requirements:
+  cygwin-1.5.20-1 (20060604)
+  GConf2-2.14.0-2
+  ORBit2-2.14.0-1
+  glib2-2.10.2-1
+  libbonobo2-2.14.0-1
+  libbz2_1-1.0.3-1
+  libxml2-2.6.24-1
+  openssl-0.9.8a-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.20-1 (20060604)
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  gtk-doc-1.5-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  sed-4.1.4-1
+
+Canonical homepage:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gnome-vfs/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-vfs2-2.14.2-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-vfs2-2.14.2-1.cygport all
+
+This will create:
+  /usr/src/gnome-vfs2-2.14.2-1-src.tar.bz2
+  /usr/src/gnome-vfs2-2.14.2-1.tar.bz2
+  /usr/src/gnome-vfs2-devel-2.14.2-1.tar.bz2
+  /usr/src/gnome-vfs2-doc-2.14.2-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /etc/gconf/schemas/desktop_default_applications.schemas
+  /etc/gconf/schemas/desktop_gnome_url_handlers.schemas
+  /etc/gconf/schemas/system_dns_sd.schemas
+  /etc/gconf/schemas/system_http_proxy.schemas
+  /etc/gconf/schemas/system_smb.schemas
+  /etc/gnome-vfs-2.0/modules/default-modules.conf
+  /etc/gnome-vfs-2.0/modules/ssl-modules.conf
+  /etc/postinstall/gnome-vfs2.sh
+  /etc/preremove/gnome-vfs2.sh
+  /usr/bin/cyggnomevfs-2-0.dll
+  /usr/bin/gnomevfs-cat.exe
+  /usr/bin/gnomevfs-copy.exe
+  /usr/bin/gnomevfs-df.exe
+  /usr/bin/gnomevfs-info.exe
+  /usr/bin/gnomevfs-ls.exe
+  /usr/bin/gnomevfs-mkdir.exe
+  /usr/bin/gnomevfs-monitor.exe
+  /usr/bin/gnomevfs-mv.exe
+  /usr/bin/gnomevfs-rm.exe
+  /usr/lib/bonobo/monikers/cygmoniker_gnome_vfs_std.dll
+  /usr/lib/bonobo/monikers/libmoniker_gnome_vfs_std.la
+  /usr/lib/bonobo/servers/GNOME_VFS_Daemon.server
+  /usr/lib/bonobo/servers/GNOME_VFS_Moniker_std.server
+  /usr/lib/gnome-vfs-2.0/gnome-vfs-daemon.exe
+  /usr/lib/gnome-vfs-2.0/modules/cygbzip2.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygcomputer.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygdns-sd.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygfile.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygftp.dll
+  /usr/lib/gnome-vfs-2.0/modules/cyggzip.dll
+  /usr/lib/gnome-vfs-2.0/modules/cyghttp.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygnetwork.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygnntp.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygsftp.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygtar.dll
+  /usr/lib/gnome-vfs-2.0/modules/cygvfs-test.dll
+  /usr/lib/gnome-vfs-2.0/modules/libbzip2.la
+  /usr/lib/gnome-vfs-2.0/modules/libcomputer.la
+  /usr/lib/gnome-vfs-2.0/modules/libdns-sd.la
+  /usr/lib/gnome-vfs-2.0/modules/libfile.la
+  /usr/lib/gnome-vfs-2.0/modules/libftp.la
+  /usr/lib/gnome-vfs-2.0/modules/libgzip.la
+  /usr/lib/gnome-vfs-2.0/modules/libhttp.la
+  /usr/lib/gnome-vfs-2.0/modules/libnetwork.la
+  /usr/lib/gnome-vfs-2.0/modules/libnntp.la
+  /usr/lib/gnome-vfs-2.0/modules/libsftp.la
+  /usr/lib/gnome-vfs-2.0/modules/libtar.la
+  /usr/lib/gnome-vfs-2.0/modules/libvfs-test.la
+  /usr/share/doc/Cygwin/gnome-vfs2-2.14.2.README
+  /usr/share/doc/gnome-vfs2-2.14.2/AUTHORS
+  /usr/share/doc/gnome-vfs2-2.14.2/COPYING
+  /usr/share/doc/gnome-vfs2-2.14.2/COPYING.LIB
+  /usr/share/doc/gnome-vfs2-2.14.2/ChangeLog
+  /usr/share/doc/gnome-vfs2-2.14.2/HACKING
+  /usr/share/doc/gnome-vfs2-2.14.2/INSTALL
+  /usr/share/doc/gnome-vfs2-2.14.2/MAINTAINERS
+  /usr/share/doc/gnome-vfs2-2.14.2/NEWS
+  /usr/share/doc/gnome-vfs2-2.14.2/README
+  /usr/share/doc/gnome-vfs2-2.14.2/TODO
+  /usr/share/locale/af/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/am/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ar/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/az/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/be/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/bg/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/bn/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/bs/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ca/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/cs/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/cy/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/da/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/de/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/el/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/eo/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/es/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/et/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/fa/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/fi/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ga/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/gl/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/gu/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/he/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/hi/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/hr/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/hu/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/id/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/is/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/it/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ja/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ka/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ko/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/li/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/lt/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/lv/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/mk/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ml/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/mn/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/mr/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ms/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/nb/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ne/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/nl/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/nn/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/nso/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/or/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/pa/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/pt/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ro/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ru/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/rw/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sk/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sl/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sq/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sr/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sr@ije/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ta/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/th/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/tr/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/uk/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/vi/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/wa/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/xh/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/yi/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/zu/LC_MESSAGES/gnome-vfs-2.0.mo
+
+Files included in the devel package:
+
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-address.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-application-registry.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-async-ops.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-cancellation.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-context.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-directory.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-dns-sd.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-drive.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-enum-types.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-file-info.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-file-size.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-find-directory.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-handle.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-init.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-job-limit.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-deprecated.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-handlers.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-info-cache.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-monitor.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-utils.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-module-callback.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-monitor.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-ops.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-resolve.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-result.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-standard-callbacks.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-types.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-uri.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-utils.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-volume-monitor.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-volume.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-xfer.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-cancellable-ops.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-inet-connection.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-method.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-mime-info.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-mime.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module-callback-module-api.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module-shared.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-parse-ls.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-pty.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-socket-buffer.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-socket.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-ssl.h
+  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-transform.h
+  /usr/lib/gnome-vfs-2.0/include/gnome-vfs-file-size.h
+  /usr/lib/libgnomevfs-2.dll.a
+  /usr/lib/libgnomevfs-2.la
+  /usr/lib/pkgconfig/gnome-vfs-2.0.pc
+  /usr/lib/pkgconfig/gnome-vfs-module-2.0.pc
+
+Files included in the doc package:
+
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/about.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/advanced-operations.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/data-types.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-2.0.devhelp
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-2.0.devhelp2
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-application-registry.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-async-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-cancellation.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-context.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-directory-basic-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-directory-find-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-directory-list-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-dns-sd.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-drive.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-advanced-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-basic-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-info-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-info.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-rw-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-size.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-file-trunc-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-inet-connection.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-init.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-method.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-database-deprecated.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-database.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-monitor.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module-callback-module-api.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module-callback.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module-shared.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-monitor.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-parse-ls.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-resolve.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-result.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-socket-buffer.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-socket.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-ssl.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-standard-callbacks.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-transform.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-uri.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-utils.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-volume-monitor.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-volume.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-xfer.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-directory-operations.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-file-and-dirs-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-first-steps.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-writing-modules.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/home.png
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/index.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/index.sgml
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/left.png
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/mime-registry.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/modules.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/networking.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/right.png
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/style.css
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/up.png
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/volumes.html
+
+------------------
+
+Port Notes:
+
+----- version 2.14.2-1 -----
+Version bump.
+
+----- version 2.14.1-1 -----
+Version bump for GNOME 2.14.
+
+----- version 2.12.2-1 -----
+Version bump for GNOME 2.12.
+Broke out separate -devel and -doc packages.
+
+----- version 2.10.1-1 -----
+Version bump for GNOME 2.10.
+
+----- version 2.8.4-1 -----
+Version bump, including patches from the Gentoo Linux ebuild.
+
+----- version 2.8.0-1 -----
+Initial release from the Cygwin distribution.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
