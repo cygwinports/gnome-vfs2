@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin GConf2-devel ORBit2-devel libbonobo2-devel libxml2-devel openssl-devel
+requires: cygwin GConf2-devel libdbus1-devel libdbus-glib_1-devel libxml2-devel openssl-devel
 external-source: gnome-vfs2
 sdesc: "GNOME Virtual File System libraries (development)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently

@@ -6,29 +6,29 @@ GNOME VFS is currently used as one of the foundations
 of the Nautilus file manager.
 
 Runtime requirements:
-  cygwin-1.5.20-1 (20060604)
-  GConf2-2.14.0-2
-  ORBit2-2.14.0-1
-  glib2-2.10.2-1
-  libbonobo2-2.14.0-1
+  cygwin-1.5.21-2
+  GConf2-2.16.0-1
+  gamin-0.1.7-1
   libbz2_1-1.0.3-1
-  libxml2-2.6.24-1
-  openssl-0.9.8a-1
+  libdbus-glib_1_2-0.72-1
+  libdbus1_3-0.94-1
+  libxml2-2.6.26-1
+  openssl-0.9.8d-1
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1 (20060604)
-  autoconf2.5-2.59-2
+  cygwin-1.5.21-2
+  autoconf2.5-2.60-1
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060817-1
+  cygport-0.2.6-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
-  gtk-doc-1.5-1
-  libtool1.5-1.5.22-1
-  make-3.80-1
+  gtk-doc-1.7-1
+  libtool1.5-1.5.23a-1
+  make-3.81-1
   pkg-config-0.20-1
-  sed-4.1.4-1
+  sed-4.1.5-1
 
 Canonical homepage:
   http://www.gnome.org/
@@ -39,21 +39,21 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-vfs2-2.14.2-1-src.tar.bz2
+  unpack gnome-vfs2-2.16.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-vfs2-2.14.2-1.cygport all
+  cygport ./gnome-vfs2-2.16.1-1.cygport all
 
 This will create:
-  /usr/src/gnome-vfs2-2.14.2-1-src.tar.bz2
-  /usr/src/gnome-vfs2-2.14.2-1.tar.bz2
-  /usr/src/gnome-vfs2-devel-2.14.2-1.tar.bz2
-  /usr/src/gnome-vfs2-doc-2.14.2-1.tar.bz2
+  /usr/src/gnome-vfs2-2.16.1-1-src.tar.bz2
+  /usr/src/gnome-vfs2-2.16.1-1.tar.bz2
+  /usr/src/gnome-vfs2-devel-2.16.1-1.tar.bz2
+  /usr/src/gnome-vfs2-doc-2.16.1-1.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary package:
+Files included in the binary packages:
 
   /etc/gconf/schemas/desktop_default_applications.schemas
   /etc/gconf/schemas/desktop_gnome_url_handlers.schemas
@@ -74,10 +74,6 @@ Files included in the binary package:
   /usr/bin/gnomevfs-monitor.exe
   /usr/bin/gnomevfs-mv.exe
   /usr/bin/gnomevfs-rm.exe
-  /usr/lib/bonobo/monikers/cygmoniker_gnome_vfs_std.dll
-  /usr/lib/bonobo/monikers/libmoniker_gnome_vfs_std.la
-  /usr/lib/bonobo/servers/GNOME_VFS_Daemon.server
-  /usr/lib/bonobo/servers/GNOME_VFS_Moniker_std.server
   /usr/lib/gnome-vfs-2.0/gnome-vfs-daemon.exe
   /usr/lib/gnome-vfs-2.0/modules/cygbzip2.dll
   /usr/lib/gnome-vfs-2.0/modules/cygcomputer.dll
@@ -103,17 +99,18 @@ Files included in the binary package:
   /usr/lib/gnome-vfs-2.0/modules/libsftp.la
   /usr/lib/gnome-vfs-2.0/modules/libtar.la
   /usr/lib/gnome-vfs-2.0/modules/libvfs-test.la
-  /usr/share/doc/Cygwin/gnome-vfs2-2.14.2.README
-  /usr/share/doc/gnome-vfs2-2.14.2/AUTHORS
-  /usr/share/doc/gnome-vfs2-2.14.2/COPYING
-  /usr/share/doc/gnome-vfs2-2.14.2/COPYING.LIB
-  /usr/share/doc/gnome-vfs2-2.14.2/ChangeLog
-  /usr/share/doc/gnome-vfs2-2.14.2/HACKING
-  /usr/share/doc/gnome-vfs2-2.14.2/INSTALL
-  /usr/share/doc/gnome-vfs2-2.14.2/MAINTAINERS
-  /usr/share/doc/gnome-vfs2-2.14.2/NEWS
-  /usr/share/doc/gnome-vfs2-2.14.2/README
-  /usr/share/doc/gnome-vfs2-2.14.2/TODO
+  /usr/share/dbus-1/services/gnome-vfs-daemon.service
+  /usr/share/doc/Cygwin/gnome-vfs2-2.16.1.README
+  /usr/share/doc/gnome-vfs2-2.16.1/AUTHORS
+  /usr/share/doc/gnome-vfs2-2.16.1/COPYING
+  /usr/share/doc/gnome-vfs2-2.16.1/COPYING.LIB
+  /usr/share/doc/gnome-vfs2-2.16.1/ChangeLog
+  /usr/share/doc/gnome-vfs2-2.16.1/HACKING
+  /usr/share/doc/gnome-vfs2-2.16.1/INSTALL
+  /usr/share/doc/gnome-vfs2-2.16.1/MAINTAINERS
+  /usr/share/doc/gnome-vfs2-2.16.1/NEWS
+  /usr/share/doc/gnome-vfs2-2.16.1/README
+  /usr/share/doc/gnome-vfs2-2.16.1/TODO
   /usr/share/locale/af/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/am/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -121,6 +118,7 @@ Files included in the binary package:
   /usr/share/locale/be/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/bn_IN/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/bs/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/ca/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/cs/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -191,8 +189,9 @@ Files included in the binary package:
   /usr/share/locale/zh_TW/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/zu/LC_MESSAGES/gnome-vfs-2.0.mo
 
-Files included in the devel package:
-
+(gnome-vfs2-devel)
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-ace.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-acl.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-address.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-application-registry.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-async-ops.h
@@ -213,6 +212,7 @@ Files included in the devel package:
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-info-cache.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-monitor.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime-utils.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-mime.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-module-callback.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-monitor.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-ops.h
@@ -222,6 +222,7 @@ Files included in the devel package:
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-types.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-uri.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-utils.h
+  /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-version.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-volume-monitor.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-volume.h
   /usr/include/gnome-vfs-2.0/libgnomevfs/gnome-vfs-xfer.h
@@ -230,7 +231,6 @@ Files included in the devel package:
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-inet-connection.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-method.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-mime-info.h
-  /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-mime.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module-callback-module-api.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module-shared.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-module.h
@@ -246,10 +246,8 @@ Files included in the devel package:
   /usr/lib/pkgconfig/gnome-vfs-2.0.pc
   /usr/lib/pkgconfig/gnome-vfs-module-2.0.pc
 
-Files included in the doc package:
-
+(gnome-vfs2-doc)
   /usr/share/gtk-doc/html/gnome-vfs-2.0/about.html
-  /usr/share/gtk-doc/html/gnome-vfs-2.0/advanced-operations.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/data-types.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-2.0.devhelp
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-2.0.devhelp2
@@ -275,6 +273,7 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-database-deprecated.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-database.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-monitor.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime-utils.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-mime.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module-callback-module-api.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-module-callback.html
@@ -294,8 +293,10 @@ Files included in the doc package:
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-volume-monitor.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-volume.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-20-gnome-vfs-xfer.html
-  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-directory-operations.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-basic-file-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-directory-ops.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-file-and-dirs-ops.html
+  /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-file-async-ops.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-first-steps.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-writing-modules.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/home.png
@@ -313,6 +314,9 @@ Files included in the doc package:
 ------------------
 
 Port Notes:
+
+----- version 2.16.1-1 -----
+Version bump for GNOME 2.16.
 
 ----- version 2.14.2-1 -----
 Version bump.
