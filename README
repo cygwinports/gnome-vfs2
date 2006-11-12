@@ -39,17 +39,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-vfs2-2.16.1-1-src.tar.bz2
+  unpack gnome-vfs2-2.16.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-vfs2-2.16.1-1.cygport all
+  cygport ./gnome-vfs2-2.16.2-1.cygport all
 
 This will create:
-  /usr/src/gnome-vfs2-2.16.1-1-src.tar.bz2
-  /usr/src/gnome-vfs2-2.16.1-1.tar.bz2
-  /usr/src/gnome-vfs2-devel-2.16.1-1.tar.bz2
-  /usr/src/gnome-vfs2-doc-2.16.1-1.tar.bz2
+  /usr/src/gnome-vfs2-2.16.2-1-src.tar.bz2
+  /usr/src/gnome-vfs2-2.16.2-1.tar.bz2
+  /usr/src/gnome-vfs2-devel-2.16.2-1.tar.bz2
+  /usr/src/gnome-vfs2-doc-2.16.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -100,17 +100,17 @@ Files included in the binary packages:
   /usr/lib/gnome-vfs-2.0/modules/libtar.la
   /usr/lib/gnome-vfs-2.0/modules/libvfs-test.la
   /usr/share/dbus-1/services/gnome-vfs-daemon.service
-  /usr/share/doc/Cygwin/gnome-vfs2-2.16.1.README
-  /usr/share/doc/gnome-vfs2-2.16.1/AUTHORS
-  /usr/share/doc/gnome-vfs2-2.16.1/COPYING
-  /usr/share/doc/gnome-vfs2-2.16.1/COPYING.LIB
-  /usr/share/doc/gnome-vfs2-2.16.1/ChangeLog
-  /usr/share/doc/gnome-vfs2-2.16.1/HACKING
-  /usr/share/doc/gnome-vfs2-2.16.1/INSTALL
-  /usr/share/doc/gnome-vfs2-2.16.1/MAINTAINERS
-  /usr/share/doc/gnome-vfs2-2.16.1/NEWS
-  /usr/share/doc/gnome-vfs2-2.16.1/README
-  /usr/share/doc/gnome-vfs2-2.16.1/TODO
+  /usr/share/doc/Cygwin/gnome-vfs2-2.16.2.README
+  /usr/share/doc/gnome-vfs2-2.16.2/AUTHORS
+  /usr/share/doc/gnome-vfs2-2.16.2/COPYING
+  /usr/share/doc/gnome-vfs2-2.16.2/COPYING.LIB
+  /usr/share/doc/gnome-vfs2-2.16.2/ChangeLog
+  /usr/share/doc/gnome-vfs2-2.16.2/HACKING
+  /usr/share/doc/gnome-vfs2-2.16.2/INSTALL
+  /usr/share/doc/gnome-vfs2-2.16.2/MAINTAINERS
+  /usr/share/doc/gnome-vfs2-2.16.2/NEWS
+  /usr/share/doc/gnome-vfs2-2.16.2/README
+  /usr/share/doc/gnome-vfs2-2.16.2/TODO
   /usr/share/locale/af/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/am/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -314,6 +314,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.16.2-1 -----
+Version bump.
 
 ----- version 2.16.1-1 -----
 Version bump for GNOME 2.16.
