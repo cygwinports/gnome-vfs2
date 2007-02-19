@@ -4,4 +4,3 @@ external-source: gnome-vfs2
 sdesc: "GNOME Virtual File System libraries (development)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently
 used as one of the foundations of the Nautilus file manager."
-k
