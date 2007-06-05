@@ -7,17 +7,17 @@ of the Nautilus file manager.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.16.0-1
+  GConf2-2.18.0.1-1
   gamin-0.1.7-1
-  glib2-2.12.9-1
+  glib2-2.12.12-1
   libbz2_1-1.0.3-2
   libcdio7-0.78.2-1
-  libdbus-glib_1_2-0.72-1
+  libdbus-glib_1_2-0.73-1
   libdbus1_3-1.0.2-1
   libintl8-0.15-1
-  libxml2-2.6.27-1
+  libxml2-2.6.28-1
   minires-1.01-1
-  openssl-0.9.8d-1
+  openssl-0.9.8e-3
   zlib-1.2.3-2
 
 Build requirements:
@@ -26,10 +26,10 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.2.11-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  gtk-doc-1.7-1
+  gtk-doc-1.8-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -44,17 +44,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-vfs2-2.16.3-1-src.tar.bz2
+  unpack gnome-vfs2-2.18.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-vfs2-2.16.3-1.cygport all
+  cygport ./gnome-vfs2-2.18.1-1.cygport all
 
 This will create:
-  /usr/src/gnome-vfs2-2.16.3-1-src.tar.bz2
-  /usr/src/gnome-vfs2-2.16.3-1.tar.bz2
-  /usr/src/gnome-vfs2-devel-2.16.3-1.tar.bz2
-  /usr/src/gnome-vfs2-doc-2.16.3-1.tar.bz2
+  /usr/src/gnome-vfs2-2.18.1-1-src.tar.bz2
+  /usr/src/gnome-vfs2-2.18.1-1.tar.bz2
+  /usr/src/gnome-vfs2-devel-2.18.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -108,17 +107,17 @@ Files included in the binary packages:
   /usr/lib/gnome-vfs-2.0/modules/libtar.la
   /usr/lib/gnome-vfs-2.0/modules/libvfs-test.la
   /usr/share/dbus-1/services/gnome-vfs-daemon.service
-  /usr/share/doc/Cygwin/gnome-vfs2-2.16.3.README
-  /usr/share/doc/gnome-vfs2-2.16.3/AUTHORS
-  /usr/share/doc/gnome-vfs2-2.16.3/COPYING
-  /usr/share/doc/gnome-vfs2-2.16.3/COPYING.LIB
-  /usr/share/doc/gnome-vfs2-2.16.3/ChangeLog
-  /usr/share/doc/gnome-vfs2-2.16.3/HACKING
-  /usr/share/doc/gnome-vfs2-2.16.3/INSTALL
-  /usr/share/doc/gnome-vfs2-2.16.3/MAINTAINERS
-  /usr/share/doc/gnome-vfs2-2.16.3/NEWS
-  /usr/share/doc/gnome-vfs2-2.16.3/README
-  /usr/share/doc/gnome-vfs2-2.16.3/TODO
+  /usr/share/doc/Cygwin/gnome-vfs2-2.18.1.README
+  /usr/share/doc/gnome-vfs2-2.18.1/AUTHORS
+  /usr/share/doc/gnome-vfs2-2.18.1/COPYING
+  /usr/share/doc/gnome-vfs2-2.18.1/COPYING.LIB
+  /usr/share/doc/gnome-vfs2-2.18.1/ChangeLog
+  /usr/share/doc/gnome-vfs2-2.18.1/HACKING
+  /usr/share/doc/gnome-vfs2-2.18.1/INSTALL
+  /usr/share/doc/gnome-vfs2-2.18.1/MAINTAINERS
+  /usr/share/doc/gnome-vfs2-2.18.1/NEWS
+  /usr/share/doc/gnome-vfs2-2.18.1/README
+  /usr/share/doc/gnome-vfs2-2.18.1/TODO
   /usr/share/locale/af/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/am/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -254,8 +253,6 @@ Files included in the binary packages:
   /usr/lib/libgnomevfs-2.la
   /usr/lib/pkgconfig/gnome-vfs-2.0.pc
   /usr/lib/pkgconfig/gnome-vfs-module-2.0.pc
-
-(gnome-vfs2-doc)
   /usr/share/gtk-doc/html/gnome-vfs-2.0/about.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/data-types.html
   /usr/share/gtk-doc/html/gnome-vfs-2.0/gnome-vfs-2.0.devhelp
@@ -323,6 +320,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.18.1-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.16.3-1 -----
 Version bump.  Enabled cdda: URI handler.
