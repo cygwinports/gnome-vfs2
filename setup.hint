@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gnome-vfs2-monikers GConf2 gamin glib2 libbz2_1 libcdio_cdda0 libcdio_paranoia0 libdbus1_3 libdbus-glib_1_2 libintl8 libxml2 minires openssl shared-mime-info zlib
+requires: cygwin gnome-vfs2-monikers GConf2 gamin glib2 libbz2_1 libcdio_cdda0 libcdio_paranoia0 libdbus1_3 libdbus-glib_1_2 libgssapi2 libintl8 libxml2 minires openssl shared-mime-info zlib
 sdesc: "GNOME Virtual File System libraries (runtime)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently
 used as one of the foundations of the Nautilus file manager."
