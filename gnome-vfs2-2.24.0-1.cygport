@@ -1,0 +1,35 @@
+ORIG_PN=gnome-vfs
+
+inherit gnome2
+
+PATCH_URI="
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.12.0-afs.patch
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.15.2-headers-define.patch
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.16.0-no-dbus-crash.patch
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-automagic-deps.patch
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.1-automagic-deps.patch
+	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-home_dir_fakeroot.patch
+	2.24-resolver.patch
+	2.24-modules-typos.patch
+"
+
+PKG_NAMES="${PN} libgnomevfs2_0 libgnomevfs2-devel"
+gnome_vfs2_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libgnomevfs2_0_CONTENTS="--exclude=include etc/ usr/bin/cyggnomevfs-2-0.dll
+                         usr/lib/gnome-vfs-2.0/ usr/share/dbus-1/ usr/share/locale/"
+libgnomevfs2_devel_CONTENTS="usr/include/ usr/lib/gnome-vfs-2.0/include/
+                             usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+
+# openssl and gnutls are mutually exclusive; openssl is the default
+CYGCONF_ARGS="
+	--libexecdir=/usr/lib/gnome-vfs-2.0
+	--disable-acl
+	--disable-avahi --disable-howl
+	--disable-cdda
+	--enable-gnutls
+	--disable-hal
+	--disable-ipv6
+	--disable-openssl
+	--disable-samba
+	--disable-selinux
+"
