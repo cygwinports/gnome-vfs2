@@ -9,7 +9,6 @@ PATCH_URI="
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-automagic-deps.patch
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.1-automagic-deps.patch
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-home_dir_fakeroot.patch
-	2.24-resolver.patch
 	2.24-modules-typos.patch
 "
 
@@ -28,7 +27,8 @@ CYGCONF_ARGS="
 	--disable-cdda
 	--enable-gnutls
 	--disable-hal
-	--disable-ipv6
+	--enable-ipv6
+	--disable-krb5
 	--disable-openssl
 	--disable-samba
 	--disable-selinux

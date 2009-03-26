@@ -6,34 +6,32 @@ GNOME VFS is currently used as one of the foundations
 of the Nautilus file manager.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libbz2_1-1.0.5-2
-  libdbus-glib_1_2-0.76-1
-  libdbus1_3-1.2.4-1
-  libfam0-0.1.10-1
-  libgconf2_4-2.24.0-1
+  cygwin-1.7.0-44
+  gnome-mime-info
+  libbz2_1-1.0.5-10
+  libdbus-glib_1_2-0.80-10
+  libdbus1_3-1.2.12-10
+  libfam0-0.1.10-10
+  libgconf2_4-2.26.0-1
   libgcrypt11-1.4.1-4
-  libglib2.0_0-2.18.3-1
+  libglib2.0_0-2.20.0-1
   libgnutls26-2.4.1-1
-  libgssapi2-1.1-1
-  libintl8-0.17-2
-  libxml2-2.7.2-1
-  minires-1.01-1
-  shared-mime-info
-  zlib-1.2.3-2
+  libintl8-0.17-10
+  libxml2-2.7.3-10
+  zlib0-1.2.3-10
 
 Build requirements:
 (besides corresponding devel packages)
-  autoconf2.5-2.63-1
-  automake1.10-1.10.1-2
+  autoconf2.5-2.63-10
+  automake1.10-1.10.1-10
   binutils-20080624-2
-  cygport-0.4.2-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gnome-common-2.24.0-1
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
-  make-3.81-1
+  cygport-0.9.6-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gnome-common-2.26.0-1
+  gtk-doc-1.11-2
+  libtool-2.2.6a-2
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -46,17 +44,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-vfs2-2.24.0-1-src.tar.bz2
+  unpack gnome-vfs2-2.24.1-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-vfs2-2.24.0-1.cygport all
+  cygport ./gnome-vfs2-2.24.1-1.cygport all
 
 This will create:
-  /usr/src/gnome-vfs2-2.24.0-1-src.tar.bz2
-  /usr/src/gnome-vfs2-2.24.0-1.tar.bz2
-  /usr/src/libgnomevfs2-devel-2.24.0-1.tar.bz2
-  /usr/src/libgnomevfs2_0-2.24.0-1.tar.bz2
+  /usr/src/gnome-vfs2-2.24.1-1-src.tar.bz2
+  /usr/src/gnome-vfs2-2.24.1-1.tar.bz2
+  /usr/src/libgnomevfs2-devel-2.24.1-1.tar.bz2
+  /usr/src/libgnomevfs2_0-2.24.1-1.tar.bz2
 
 -------------------------------------------
 
@@ -72,16 +70,15 @@ Files included in the binary packages:
   /usr/bin/gnomevfs-monitor.exe
   /usr/bin/gnomevfs-mv.exe
   /usr/bin/gnomevfs-rm.exe
-  /usr/share/doc/gnome-vfs2-2.24.0/AUTHORS
-  /usr/share/doc/gnome-vfs2-2.24.0/COPYING
-  /usr/share/doc/gnome-vfs2-2.24.0/COPYING.LIB
-  /usr/share/doc/gnome-vfs2-2.24.0/ChangeLog
-  /usr/share/doc/gnome-vfs2-2.24.0/HACKING
-  /usr/share/doc/gnome-vfs2-2.24.0/INSTALL
-  /usr/share/doc/gnome-vfs2-2.24.0/MAINTAINERS
-  /usr/share/doc/gnome-vfs2-2.24.0/NEWS
-  /usr/share/doc/gnome-vfs2-2.24.0/README
-  /usr/share/doc/gnome-vfs2-2.24.0/TODO
+  /usr/share/doc/gnome-vfs2/AUTHORS
+  /usr/share/doc/gnome-vfs2/COPYING
+  /usr/share/doc/gnome-vfs2/COPYING.LIB
+  /usr/share/doc/gnome-vfs2/ChangeLog
+  /usr/share/doc/gnome-vfs2/HACKING
+  /usr/share/doc/gnome-vfs2/MAINTAINERS
+  /usr/share/doc/gnome-vfs2/NEWS
+  /usr/share/doc/gnome-vfs2/README
+  /usr/share/doc/gnome-vfs2/TODO
 
 (libgnomevfs2_0)
   /etc/gconf/schemas/desktop_default_applications.schemas
@@ -95,6 +92,7 @@ Files included in the binary packages:
   /etc/preremove/gnome-vfs2.sh
   /usr/bin/cyggnomevfs-2-0.dll
   /usr/lib/gnome-vfs-2.0/gnome-vfs-daemon.exe
+  /usr/lib/gnome-vfs-2.0/include/gnome-vfs-file-size.h
   /usr/lib/gnome-vfs-2.0/modules/cygbzip2.dll
   /usr/lib/gnome-vfs-2.0/modules/cygcomputer.dll
   /usr/lib/gnome-vfs-2.0/modules/cygdns-sd.dll
@@ -124,6 +122,7 @@ Files included in the binary packages:
   /usr/share/locale/am/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/ar/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/as/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/ast/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -135,6 +134,7 @@ Files included in the binary packages:
   /usr/share/locale/cy/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/da/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/de/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/dz/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/el/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/en_CA/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/en_GB/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -196,6 +196,8 @@ Files included in the binary packages:
   /usr/share/locale/th/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/tr/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/uk/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/uz/LC_MESSAGES/gnome-vfs-2.0.mo
+  /usr/share/locale/uz@cyrillic/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/vi/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/wa/LC_MESSAGES/gnome-vfs-2.0.mo
   /usr/share/locale/xh/LC_MESSAGES/gnome-vfs-2.0.mo
@@ -256,7 +258,6 @@ Files included in the binary packages:
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-socket.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-ssl.h
   /usr/include/gnome-vfs-module-2.0/libgnomevfs/gnome-vfs-transform.h
-  /usr/lib/gnome-vfs-2.0/include/gnome-vfs-file-size.h
   /usr/lib/libgnomevfs-2.dll.a
   /usr/lib/libgnomevfs-2.la
   /usr/lib/pkgconfig/gnome-vfs-2.0.pc
@@ -329,45 +330,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 2.24.0-1 -----
-Version bump for GNOME 2.24.
-
------ version 2.22.0-1 -----
-Version bump for GNOME 2.22.
-
------ version 2.20.1-1 -----
-Version bump for GNOME 2.20.
-
------ version 2.18.1-1 -----
-Version bump for GNOME 2.18.
-
------ version 2.16.3-1 -----
-Version bump.  Enabled cdda: URI handler.
-
------ version 2.16.2-1 -----
-Version bump.
-
------ version 2.16.1-1 -----
-Version bump for GNOME 2.16.
-
------ version 2.14.2-1 -----
-Version bump.
-
------ version 2.14.1-1 -----
-Version bump for GNOME 2.14.
-
------ version 2.12.2-1 -----
-Version bump for GNOME 2.12.
-Broke out separate -devel and -doc packages.
-
------ version 2.10.1-1 -----
-Version bump for GNOME 2.10.
-
------ version 2.8.4-1 -----
-Version bump, including patches from the Gentoo Linux ebuild.
-
------ version 2.8.0-1 -----
-Initial release from the Cygwin distribution.
+----- version 2.24.1-1 -----
+Initial release of GNOME 2.26 for Cygwin 1.7.
 
 
 Cygwin port maintained by:
