@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libglib2.0_0 libgnomevfs2_0
+requires: libglib2.0_0 libgnomevfs2_0
 sdesc: "GNOME Virtual File System libraries (apps)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently
 used as one of the foundations of the Nautilus file manager."
