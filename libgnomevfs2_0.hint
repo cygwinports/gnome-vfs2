@@ -1,5 +1,5 @@
 category: Gnome
-requires: GConf2 gnome-mime-data libbz2_1 libdbus-glib_1_2 libdbus1_3 libfam0 libgconf2_4 libgcrypt11 libglib2.0_0 libgnutls26 libintl8 libxml2 shared-mime-info zlib0
+requires: GConf2 libbz2_1 libdbus-glib_1_2 libdbus1_3 libfam0 libgcc1 libgconf2_4 libglib2.0_0 libintl8 libxml2 openssl shared-mime-info zlib0
 external-source: gnome-vfs2
 sdesc: "GNOME Virtual File System libraries (runtime)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently

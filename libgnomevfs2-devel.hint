@@ -1,5 +1,5 @@
 category: Gnome
-requires: libgnomevfs2_0 libdbus-glib_1-devel libdbus1-devel libgconf2-devel libgcrypt-devel libglib2.0-devel gnutls-devel gettext libxml2-devel
+requires: libgnomevfs2_0 libdbus-glib_1-devel libdbus1-devel libgconf2-devel libglib2.0-devel gettext libxml2-devel openssl-devel
 external-source: gnome-vfs2
 sdesc: "GNOME Virtual File System libraries (development)"
 ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently

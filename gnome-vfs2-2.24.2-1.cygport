@@ -25,11 +25,11 @@ CYGCONF_ARGS="
 	--disable-acl
 	--disable-avahi --disable-howl
 	--disable-cdda
-	--enable-gnutls
+	--disable-gnutls
 	--disable-hal
 	--enable-ipv6
 	--disable-krb5
-	--disable-openssl
+	--enable-openssl
 	--disable-samba
 	--disable-selinux
 "
