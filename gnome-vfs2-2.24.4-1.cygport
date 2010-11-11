@@ -8,7 +8,6 @@ PATCH_URI="
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.16.0-no-dbus-crash.patch
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-automagic-deps.patch
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.1-automagic-deps.patch
-	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-home_dir_fakeroot.patch
 	2.24-modules-typos.patch
 "
 
