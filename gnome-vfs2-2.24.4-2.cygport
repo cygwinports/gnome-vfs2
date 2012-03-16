@@ -32,3 +32,5 @@ CYGCONF_ARGS="
 	--disable-samba
 	--disable-selinux
 "
+
+KEEP_LA_FILES="shared"
