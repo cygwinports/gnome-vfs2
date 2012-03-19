@@ -22,12 +22,12 @@ libgnomevfs2_devel_CONTENTS="usr/include/ usr/lib/gnome-vfs-2.0/include/
 CYGCONF_ARGS="
 	--libexecdir=/usr/lib/gnome-vfs-2.0
 	--disable-acl
-	--disable-avahi --disable-howl
+	--enable-avahi --disable-howl
 	--disable-cdda
 	--disable-gnutls
 	--disable-hal
 	--enable-ipv6
-	--disable-krb5
+	--enable-krb5
 	--enable-openssl
 	--disable-samba
 	--disable-selinux
