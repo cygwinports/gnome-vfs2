@@ -1,6 +1,0 @@
-category: Gnome
-requires: libgnomevfs2_0 libavahi-client-devel libavahi-common-devel libavahi-glib-devel libdbus-glib_1-devel libdbus1-devel libgconf2-devel libglib2.0-devel gettext libxml2-devel openssl-devel
-external-source: gnome-vfs2
-sdesc: "GNOME Virtual File System libraries (development)"
-ldesc: "This is the GNOME Virtual File System. GNOME VFS is currently
-used as one of the foundations of the Nautilus file manager."

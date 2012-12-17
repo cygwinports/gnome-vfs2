@@ -1,6 +1,13 @@
 ORIG_PN=gnome-vfs
-
 inherit gnome2
+
+NAME="gnome-vfs2"
+VERSION=2.24.4
+RELEASE=4
+CATEGORY="GNOME"
+SUMMARY="GNOME Virtual File System libraries"
+DESCRIPTION="This is the GNOME Virtual File System. GNOME VFS is currently
+used as one of the foundations of the Nautilus file manager."
 
 PATCH_URI="
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.12.0-afs.patch
@@ -13,6 +20,7 @@ PATCH_URI="
 
 PKG_NAMES="${PN} libgnomevfs2_0 libgnomevfs2-devel"
 gnome_vfs2_CONTENTS="usr/bin/*.exe usr/share/doc/"
+libgnomevfs2_0_REQUIRES="gnome-mime-data shared-mime-info"
 libgnomevfs2_0_CONTENTS="--exclude=include etc/ usr/bin/cyggnomevfs-2-0.dll
                          usr/lib/gnome-vfs-2.0/ usr/share/dbus-1/ usr/share/locale/"
 libgnomevfs2_devel_CONTENTS="usr/include/ usr/lib/gnome-vfs-2.0/include/
@@ -32,5 +40,3 @@ CYGCONF_ARGS="
 	--disable-samba
 	--disable-selinux
 "
-
-KEEP_LA_FILES="shared"
