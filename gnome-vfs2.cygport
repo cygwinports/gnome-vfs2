@@ -3,7 +3,7 @@ inherit gnome2
 
 NAME="gnome-vfs2"
 VERSION=2.24.4
-RELEASE=4
+RELEASE=5
 CATEGORY="GNOME"
 SUMMARY="GNOME Virtual File System libraries"
 DESCRIPTION="This is the GNOME Virtual File System. GNOME VFS is currently
@@ -16,15 +16,18 @@ PATCH_URI="
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.0-automagic-deps.patch
 	mirror://portage/gnome-base/${ORIG_PN}/files/${ORIG_PN}-2.20.1-automagic-deps.patch
 	2.24-modules-typos.patch
+	2.24-glib-deprecated.patch
 "
 
-PKG_NAMES="${PN} libgnomevfs2_0 libgnomevfs2-devel"
+PKG_NAMES="${NAME} libgnomevfs2_0 libgnomevfs2-devel libgnomevfs2-doc"
 gnome_vfs2_CONTENTS="usr/bin/*.exe usr/share/doc/"
 libgnomevfs2_0_REQUIRES="gnome-mime-data shared-mime-info"
 libgnomevfs2_0_CONTENTS="--exclude=include etc/ usr/bin/cyggnomevfs-2-0.dll
                          usr/lib/gnome-vfs-2.0/ usr/libexec/ usr/share/dbus-1/ usr/share/locale/"
 libgnomevfs2_devel_CONTENTS="usr/include/ usr/lib/gnome-vfs-2.0/include/
-                             usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+                             usr/lib/lib* usr/lib/pkgconfig/"
+libgnomevfs2_doc_CATEGORY="Doc"
+libgnomevfs2_doc_CONTENTS="usr/share/gtk-doc/"
 
 # openssl and gnutls are mutually exclusive; openssl is the default
 CYGCONF_ARGS="
