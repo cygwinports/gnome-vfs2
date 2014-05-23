@@ -3,8 +3,8 @@ inherit gnome2
 
 NAME="gnome-vfs2"
 VERSION=2.24.4
-RELEASE=5
-CATEGORY="GNOME"
+RELEASE=6
+CATEGORY="Libs"
 SUMMARY="GNOME Virtual File System libraries"
 DESCRIPTION="This is the GNOME Virtual File System. GNOME VFS is currently
 used as one of the foundations of the Nautilus file manager."
@@ -20,6 +20,7 @@ PATCH_URI="
 "
 
 PKG_NAMES="${NAME} libgnomevfs2_0 libgnomevfs2-devel libgnomevfs2-doc"
+gnome_vfs2_CONTENTS="GNOME"
 gnome_vfs2_CONTENTS="usr/bin/*.exe usr/share/doc/"
 libgnomevfs2_0_REQUIRES="gnome-mime-data shared-mime-info"
 libgnomevfs2_0_CONTENTS="--exclude=include etc/ usr/bin/cyggnomevfs-2-0.dll
