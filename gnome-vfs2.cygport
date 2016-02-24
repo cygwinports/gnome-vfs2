@@ -22,7 +22,7 @@ PATCH_URI="
 PKG_NAMES="${NAME} libgnomevfs2_0 libgnomevfs2-devel libgnomevfs2-doc"
 gnome_vfs2_CONTENTS="GNOME"
 gnome_vfs2_CONTENTS="usr/bin/*.exe usr/share/doc/"
-libgnomevfs2_0_REQUIRES="gnome-mime-data shared-mime-info"
+libgnomevfs2_0_REQUIRES="desktop-file-utils gnome-mime-data shared-mime-info"
 libgnomevfs2_0_CONTENTS="--exclude=include etc/ usr/bin/cyggnomevfs-2-0.dll
                          usr/lib/gnome-vfs-2.0/ usr/libexec/ usr/share/dbus-1/ usr/share/locale/"
 libgnomevfs2_devel_CONTENTS="usr/include/ usr/lib/gnome-vfs-2.0/include/
